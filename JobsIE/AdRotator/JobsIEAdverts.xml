@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <ImageUrl>~/AdRotator/banners/w6.gif</ImageUrl>
+    <NavigateUrl>http://www.w3schools.com/</NavigateUrl>
+    <AlternateText>W3Schools Main Site</AlternateText>
+    <Impressions>50</Impressions>
+    <Keyword>elearning</Keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/AdRotator/banners/decoder.jpg</ImageUrl>
+    <NavigateUrl>http://www.decoder.ie/</NavigateUrl>
+    <AlternateText>Derek's site</AlternateText>
+    <Impressions>50</Impressions>
+    <Keyword>decoder</Keyword>
+  </Ad>
+</Advertisements>

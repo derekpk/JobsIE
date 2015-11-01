@@ -1,0 +1,439 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{3A6AFC07-DD57-4E0B-AF71-DDA1953ED390}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>JobsIE</RootNamespace>
+    <AssemblyName>JobsIE</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>JobsIE.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>JobsIE.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdRotator\Banners\decoder.jpg" />
+    <Content Include="AdRotator\Banners\w6.gif" />
+    <Content Include="AdRotator\JobsIEAdverts.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Company\CompJobUpdate.aspx" />
+    <Content Include="Company\CompJobUpload.aspx" />
+    <Content Include="Company\CompJobUploadComplete.aspx" />
+    <Content Include="Company\CompJobUploadFailed.aspx" />
+    <Content Include="Company\CompRegistrationFailed.aspx" />
+    <Content Include="Company\CompLogin.aspx" />
+    <Content Include="Company\CompLoginFailed.aspx" />
+    <Content Include="Company\CompRegister.aspx" />
+    <Content Include="Company\CompRegistrationComplete.aspx" />
+    <Content Include="Company\CompRespondToApplicant.aspx" />
+    <Content Include="Company\CompSearchAll.aspx" />
+    <Content Include="Company\CompServices.aspx" />
+    <Content Include="Company\CompUpdate.aspx" />
+    <Content Include="Company\CompUpdateOneJob.aspx" />
+    <Content Include="Company\CompViewApps.aspx" />
+    <Content Include="JobsIECreationScript.sql" />
+    <Content Include="Main.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Styles\JobsIE.css" />
+    <Content Include="User\UserApplyForOffer.aspx" />
+    <Content Include="User\UserLoginFailed.aspx" />
+    <Content Include="User\UserRegistrationComplete.aspx" />
+    <Content Include="User\UserLogin.aspx" />
+    <Content Include="LogOut.aspx" />
+    <Content Include="User\UserRegister.aspx" />
+    <Content Include="User\UserRegistrationFailed.aspx" />
+    <Content Include="User\UserSearchOffers.aspx" />
+    <Content Include="User\UserServices.aspx" />
+    <Content Include="User\UserUpdate.aspx" />
+    <Content Include="User\UserUploadCV.aspx" />
+    <Content Include="Company\CompUserViewDetails.aspx" />
+    <Content Include="User\UserViewJobsAppliedFor.aspx" />
+    <Content Include="User\UserViewOneOfTheJobsYouApplied.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Company\CompJobUpdate.aspx.designer.vb">
+      <DependentUpon>CompJobUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\CompJobUpdate.aspx.vb">
+      <DependentUpon>CompJobUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Company\CompJobUpload.aspx.designer.vb">
+      <DependentUpon>CompJobUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\CompJobUpload.aspx.vb">
+      <DependentUpon>CompJobUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company\CompJobUploadComplete.aspx.designer.vb">
+      <DependentUpon>CompJobUploadComplete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\CompJobUploadComplete.aspx.vb">
+      <DependentUpon>CompJobUploadComplete.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Company\CompJobUploadFailed.aspx.designer.vb">
+      <DependentUpon>CompJobUploadFailed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\CompJobUploadFailed.aspx.vb">
+      <DependentUpon>CompJobUploadFailed.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Company\CompRegistrationFailed.aspx.designer.vb">
+      <DependentUpon>CompRegistrationFailed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\CompRegistrationFailed.aspx.vb">
+      <DependentUpon>CompRegistrationFailed.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Company\CompLogin.aspx.designer.vb">
+      <DependentUpon>CompLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\CompLogin.aspx.vb">
+      <DependentUpon>CompLogin.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Company\CompLoginFailed.aspx.designer.vb">
+      <DependentUpon>CompLoginFailed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\CompLoginFailed.aspx.vb">
+      <DependentUpon>CompLoginFailed.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Company\CompRegister.aspx.designer.vb">
+      <DependentUpon>CompRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\CompRegister.aspx.vb">
+      <DependentUpon>CompRegister.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Company\CompRegistrationComplete.aspx.designer.vb">
+      <DependentUpon>CompRegistrationComplete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\CompRegistrationComplete.aspx.vb">
+      <DependentUpon>CompRegistrationComplete.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Company\CompRespondToApplicant.aspx.designer.vb">
+      <DependentUpon>CompRespondToApplicant.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\CompRespondToApplicant.aspx.vb">
+      <DependentUpon>CompRespondToApplicant.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Company\CompSearchAll.aspx.designer.vb">
+      <DependentUpon>CompSearchAll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\CompSearchAll.aspx.vb">
+      <DependentUpon>CompSearchAll.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Company\CompServices.aspx.designer.vb">
+      <DependentUpon>CompServices.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\CompServices.aspx.vb">
+      <DependentUpon>CompServices.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Company\CompUpdate.aspx.designer.vb">
+      <DependentUpon>CompUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\CompUpdate.aspx.vb">
+      <DependentUpon>CompUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Company\CompUpdateOneJob.aspx.designer.vb">
+      <DependentUpon>CompUpdateOneJob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\CompUpdateOneJob.aspx.vb">
+      <DependentUpon>CompUpdateOneJob.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Company\CompViewApps.aspx.designer.vb">
+      <DependentUpon>CompViewApps.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\CompViewApps.aspx.vb">
+      <DependentUpon>CompViewApps.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Main.aspx.designer.vb">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.aspx.vb">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MyUtilityClass.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobsIE.Master.designer.vb">
+      <DependentUpon>JobsIE.Master</DependentUpon>
+    </Compile>
+    <Compile Include="JobsIE.Master.vb">
+      <DependentUpon>JobsIE.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="User\UserApplyForOffer.aspx.designer.vb">
+      <DependentUpon>UserApplyForOffer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\UserApplyForOffer.aspx.vb">
+      <DependentUpon>UserApplyForOffer.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="User\UserLoginFailed.aspx.designer.vb">
+      <DependentUpon>UserLoginFailed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\UserLoginFailed.aspx.vb">
+      <DependentUpon>UserLoginFailed.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="User\UserRegistrationComplete.aspx.designer.vb">
+      <DependentUpon>UserRegistrationComplete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\UserRegistrationComplete.aspx.vb">
+      <DependentUpon>UserRegistrationComplete.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="User\UserLogin.aspx.designer.vb">
+      <DependentUpon>UserLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\UserLogin.aspx.vb">
+      <DependentUpon>UserLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogOut.aspx.designer.vb">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogOut.aspx.vb">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="User\UserRegister.aspx.designer.vb">
+      <DependentUpon>UserRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\UserRegister.aspx.vb">
+      <DependentUpon>UserRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\UserRegistrationFailed.aspx.designer.vb">
+      <DependentUpon>UserRegistrationFailed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\UserRegistrationFailed.aspx.vb">
+      <DependentUpon>UserRegistrationFailed.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="User\UserSearchOffers.aspx.designer.vb">
+      <DependentUpon>UserSearchOffers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\UserSearchOffers.aspx.vb">
+      <DependentUpon>UserSearchOffers.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="User\UserServices.aspx.designer.vb">
+      <DependentUpon>UserServices.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\UserServices.aspx.vb">
+      <DependentUpon>UserServices.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="User\UserUpdate.aspx.designer.vb">
+      <DependentUpon>UserUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\UserUpdate.aspx.vb">
+      <DependentUpon>UserUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="User\UserUploadCV.aspx.designer.vb">
+      <DependentUpon>UserUploadCV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\UserUploadCV.aspx.vb">
+      <DependentUpon>UserUploadCV.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Company\CompUserViewDetails.aspx.designer.vb">
+      <DependentUpon>CompUserViewDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\CompUserViewDetails.aspx.vb">
+      <DependentUpon>CompUserViewDetails.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="User\UserViewJobsAppliedFor.aspx.designer.vb">
+      <DependentUpon>UserViewJobsAppliedFor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\UserViewJobsAppliedFor.aspx.vb">
+      <DependentUpon>UserViewJobsAppliedFor.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="User\UserViewOneOfTheJobsYouApplied.aspx.designer.vb">
+      <DependentUpon>UserViewOneOfTheJobsYouApplied.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\UserViewOneOfTheJobsYouApplied.aspx.vb">
+      <DependentUpon>UserViewOneOfTheJobsYouApplied.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="JobsIE.Master" />
+    <None Include="Documents\DerekKeogh_Internet System Development Project.doc" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="User\CV\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>61571</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,92 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="JobsIE.master.vb" Inherits="JobsIE.JobsIE" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="~/Styles/JobsIE.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server"/>
+</head>
+<body>
+<form runat="server" id="MasterFormID">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                Internet System Development ASP.net Project
+                </h1>
+            </div>
+            <!--Add the name of the logged in user to the top right of the application-->
+             <div class="loginDisplay">
+                <%If Session("LoggedInRole").ToString() = Session("NotLoggedIn").ToString() Then%>
+                    [ <a href="~/Main.aspx?" ID="HeadLoginStatus" runat="server">Log In</a> ]
+                <% Else %>
+                    Logged in as: <span class="bold">
+                    <%Select Case Session("LoggedInRole")
+                     Case Session("LoggedInAsAdmin")
+                                Response.Write(Session("LoggedInName").ToString())
+
+                     Case Session("LoggedInAsUser")
+                                Response.Write(Session("LoggedInName").ToString())
+
+                     Case Session("LoggedInAsCompany")
+                                Response.Write(Session("LoggedInName").ToString())
+                 End Select
+                        %></span> - [ <a href="~/LogOut.aspx?" ID="A1" runat="server">Log Out</a> ]
+                    <% End If%>    
+            </div>
+            <!--Create the menus based on who is logged in-->
+            <div class="clear hideSkiplink">
+                
+                <%If Session("LoggedInRole").ToString() = Session("LoggedInAsUser").ToString() Then%>
+
+                <!--Create the menu for logged in USERS-->
+                <asp:Menu ID="Menu_User" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Main.aspx" Text="Home"/>
+                        <asp:MenuItem NavigateUrl="~/User/UserServices.aspx" Text="User Services"/>
+                    </Items>
+                </asp:Menu>
+                
+                <%ElseIf Session("LoggedInRole").ToString() = Session("LoggedInAsCompany").ToString() Then%>
+
+                <!--Create the menu for logged in COMPANIES-->
+                <asp:Menu ID="Menu_Company" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Main.aspx" Text="Home"/>
+                        <asp:MenuItem NavigateUrl="~/Company/CompServices.aspx" Text="Company Services"/>
+                    </Items>
+                </asp:Menu>
+
+                <%ElseIf Session("LoggedInRole").ToString() = Session("NotLoggedIn").ToString() Then%>
+
+                <!--Create the menu for when nobody is logged in-->
+                <asp:Menu ID="Menu_Default" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Main.aspx" Text="Home"/>
+                    </Items>
+                </asp:Menu>
+                
+                <%End If%>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>    
+     <!--Add the last log date and name of the logged in user at the bottom of the page-->
+        <div class="PreviousLogin">
+        <%If Session("LoggedInRole").ToString() <> Session("NotLoggedIn").ToString() Then%>
+            <asp:Label ID="Label_LogInMessage" runat="server" ></asp:Label>
+        <%
+        Else
+            Response.Write("All code and design copyright &copyDerek Keogh 2012")
+        End If%>    
+        </div>
+
+</form>
+</body>
+</html>

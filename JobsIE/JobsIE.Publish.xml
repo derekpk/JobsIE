@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="http://localhost:88/" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Company/CompViewApps.aspx" publishTime="04/23/2012 02:29:16" />
+    <file relUrl="bin/JobsIE.xml" publishTime="11/01/2015 13:21:02" />
+    <file relUrl="Global.asax" publishTime="04/10/2012 13:12:02" />
+    <file relUrl="User/UserRegister.aspx" publishTime="04/22/2012 14:51:11" />
+    <file relUrl="User/UserSearchOffers.aspx" publishTime="04/22/2012 02:55:55" />
+    <file relUrl="Company/CompUpdate.aspx" publishTime="04/22/2012 02:36:04" />
+    <file relUrl="Company/CompServices.aspx" publishTime="04/20/2012 01:09:53" />
+    <file relUrl="Main.aspx" publishTime="04/26/2012 18:53:23" />
+    <file relUrl="AdRotator/Banners/decoder.jpg" publishTime="11/01/2015 12:27:54" />
+    <file relUrl="JobsIE.Master" publishTime="05/27/2013 23:43:30" />
+    <file relUrl="User/UserViewJobsAppliedFor.aspx" publishTime="04/23/2012 02:31:56" />
+    <file relUrl="Company/CompJobUpdate.aspx" publishTime="04/22/2012 22:46:10" />
+    <file relUrl="Company/CompSearchAll.aspx" publishTime="04/22/2012 02:55:55" />
+    <file relUrl="Company/CompLoginFailed.aspx" publishTime="04/12/2012 01:08:59" />
+    <file relUrl="Styles/JobsIE.css" publishTime="08/29/2012 11:32:11" />
+    <file relUrl="User/UserLoginFailed.aspx" publishTime="04/12/2012 01:06:46" />
+    <file relUrl="Company/CompRespondToApplicant.aspx" publishTime="04/23/2012 00:03:34" />
+    <file relUrl="Company/CompRegistrationFailed.aspx" publishTime="04/12/2012 23:37:50" />
+    <file relUrl="Company/CompUpdateOneJob.aspx" publishTime="04/26/2012 19:16:22" />
+    <file relUrl="Company/CompJobUploadFailed.aspx" publishTime="04/13/2012 20:09:40" />
+    <file relUrl="User/UserLogin.aspx" publishTime="04/17/2012 02:52:44" />
+    <file relUrl="Company/CompRegister.aspx" publishTime="04/22/2012 20:40:24" />
+    <file relUrl="Company/CompJobUploadComplete.aspx" publishTime="04/13/2012 19:40:20" />
+    <file relUrl="Company/CompLogin.aspx" publishTime="04/19/2012 19:07:20" />
+    <file relUrl="LogOut.aspx" publishTime="04/12/2012 23:27:50" />
+    <file relUrl="User/UserViewOneOfTheJobsYouApplied.aspx" publishTime="04/21/2012 22:04:07" />
+    <file relUrl="bin/JobsIE.pdb" publishTime="11/01/2015 13:21:02" />
+    <file relUrl="User/UserApplyForOffer.aspx" publishTime="04/20/2012 09:46:19" />
+    <file relUrl="Company/CompJobUpload.aspx" publishTime="04/20/2012 00:44:43" />
+    <file relUrl="bin/JobsIE.dll" publishTime="11/01/2015 13:21:02" />
+    <file relUrl="Company/CompRegistrationComplete.aspx" publishTime="04/22/2012 21:13:27" />
+    <file relUrl="User/UserRegistrationFailed.aspx" publishTime="04/12/2012 23:30:51" />
+    <file relUrl="AdRotator/Banners/w6.gif" publishTime="04/11/2012 22:35:11" />
+    <file relUrl="Web.config" publishTime="11/01/2015 13:21:18" />
+    <file relUrl="User/UserUploadCV.aspx" publishTime="04/23/2012 13:01:16" />
+    <file relUrl="User/UserUpdate.aspx" publishTime="04/22/2012 02:24:07" />
+    <file relUrl="AdRotator/JobsIEAdverts.xml" publishTime="11/01/2015 13:20:59" />
+    <file relUrl="User/UserServices.aspx" publishTime="04/20/2012 11:13:45" />
+    <file relUrl="JobsIECreationScript.sql" publishTime="04/23/2012 14:18:23" />
+    <file relUrl="Company/CompUserViewDetails.aspx" publishTime="04/23/2012 00:03:07" />
+    <file relUrl="User/UserRegistrationComplete.aspx" publishTime="04/14/2012 13:29:19" />
+  </publishProfile>
+</publishData>
